@@ -1,0 +1,22 @@
+TIKTOK IMPARABLE
+
+ENLACE DE PAGO CONFIGURADO:
+https://pay.hotmart.com/Q106684450I?off=7g3k8rtg&checkoutMode=10
+
+PRECIO:
+- Precio regular: $47 USD
+- Oferta especial: $14.99 USD
+
+CARACTERÍSTICAS:
+- Diseño premium inspirado en la identidad visual de TikTok.
+- Todos los botones conectados a Hotmart.
+- Hero con imagen del mentor y mockup del producto.
+- Módulos interactivos con navegación lateral.
+- Secciones de problema, resultados, programa, incluye, productor, oferta y preguntas frecuentes.
+- Responsive para escritorio, tablet y celular.
+- HTML independiente y versión web con carpeta assets.
+
+ARCHIVOS:
+- index.html
+- tiktok_imparable_landing_independiente.html
+- assets/

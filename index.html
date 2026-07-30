@@ -1,0 +1,1905 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description"
+    content="TikTok Imparable: entrenamiento paso a paso para hacer crecer una cuenta de TikTok usando curación de contenido, SEO e Inteligencia Artificial.">
+  <meta name="theme-color" content="#09050f">
+  <title>TikTok Imparable</title>
+  <style>
+    :root {
+      --bg: #07040c;
+      --bg2: #100719;
+      --panel: #120a1d;
+      --panel2: #180d26;
+      --text: #f6f3fb;
+      --muted: #bdb3ca;
+      --white: #ffffff;
+      --pink: #ff2f7d;
+      --pink2: #ff5aa7;
+      --cyan: #31e6f2;
+      --cyan2: #44b7ff;
+      --violet: #8f47ff;
+      --purple: #c13fff;
+      --yellow: #ffd12f;
+      --line: rgba(255, 255, 255, .08);
+      --shadow: 0 28px 80px rgba(0, 0, 0, .58);
+      --max: 1240px;
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+
+    body {
+      margin: 0;
+      min-width: 320px;
+      color: var(--white);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+      overflow-x: hidden;
+      background:
+        radial-gradient(circle at 86% 8%, rgba(49, 230, 242, .15), transparent 23rem),
+        radial-gradient(circle at 9% 61%, rgba(255, 47, 125, .14), transparent 27rem),
+        radial-gradient(circle at 50% 34%, rgba(143, 71, 255, .1), transparent 32rem),
+        linear-gradient(180deg, #060309 0%, #100719 54%, #07040c 100%);
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -2;
+      pointer-events: none;
+      opacity: .12;
+      background-image:
+        linear-gradient(rgba(255, 255, 255, .025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, .025) 1px, transparent 1px);
+      background-size: 56px 56px;
+      mask-image: linear-gradient(to bottom, #000, transparent 92%);
+    }
+
+    img {
+      display: block;
+      max-width: 100%
+    }
+
+    a {
+      color: inherit
+    }
+
+    button {
+      font: inherit
+    }
+
+    .container {
+      width: min(var(--max), calc(100% - 40px));
+      margin: auto
+    }
+
+    .section {
+      padding: 100px 0;
+      position: relative
+    }
+
+    .section-sm {
+      padding: 76px 0;
+      position: relative
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0
+    }
+
+    h1 {
+      font-size: clamp(3.1rem, 7vw, 6.7rem);
+      line-height: .92;
+      letter-spacing: -.07em;
+      max-width: 930px;
+      margin: 18px 0 22px;
+    }
+
+    h2 {
+      font-size: clamp(2.2rem, 4.7vw, 4.5rem);
+      line-height: 1;
+      letter-spacing: -.05em;
+      margin-bottom: 18px;
+    }
+
+    h3 {
+      font-size: clamp(1.1rem, 2vw, 1.5rem);
+      line-height: 1.16;
+      margin-bottom: 10px
+    }
+
+    p {
+      color: var(--text)
+    }
+
+    .lead {
+      max-width: 820px;
+      font-size: clamp(1.03rem, 1.65vw, 1.22rem);
+      line-height: 1.78
+    }
+
+    .muted {
+      color: var(--muted)
+    }
+
+    .gradient {
+      color: transparent;
+      background: linear-gradient(98deg, #fff 0%, var(--pink2) 22%, var(--pink) 42%, var(--violet) 62%, var(--cyan) 82%, #fff 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+    }
+
+    .cyan-gradient {
+      color: transparent;
+      background: linear-gradient(90deg, #fff, var(--cyan), var(--cyan2));
+      -webkit-background-clip: text;
+      background-clip: text;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 8px 13px;
+      border-radius: 999px;
+      border: 1px solid rgba(49, 230, 242, .22);
+      background: rgba(49, 230, 242, .08);
+      color: #8ff7ff;
+      font-size: .76rem;
+      font-weight: 950;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--cyan);
+      box-shadow: 0 0 16px var(--cyan);
+    }
+
+    .btn {
+      min-height: 58px;
+      padding: 0 24px;
+      border-radius: 16px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      text-decoration: none;
+      text-align: center;
+      font-weight: 950;
+      transition: .24s ease;
+      border: 1px solid transparent;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px)
+    }
+
+    .btn-primary {
+      color: #fff;
+      background: linear-gradient(135deg, var(--pink) 0%, var(--purple) 48%, var(--cyan2) 100%);
+      box-shadow: 0 18px 42px rgba(255, 47, 125, .25), inset 0 1px 0 rgba(255, 255, 255, .38);
+    }
+
+    .btn-secondary {
+      color: #fff;
+      background: rgba(255, 255, 255, .04);
+      border-color: rgba(255, 255, 255, .12);
+    }
+
+    .btn-sm {
+      min-height: 46px;
+      padding: 0 18px;
+      border-radius: 12px;
+      font-size: .9rem
+    }
+
+    .offerbar {
+      padding: 10px 16px;
+      text-align: center;
+      color: #fff;
+      background: linear-gradient(90deg, #ff2f7d, #9b3dff, #20d9e8);
+      font-size: .82rem;
+      font-weight: 1000;
+      letter-spacing: .04em;
+    }
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 80;
+      border-bottom: 1px solid rgba(255, 255, 255, .06);
+      background: rgba(7, 4, 12, .84);
+      backdrop-filter: blur(16px);
+    }
+
+    .navin {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      text-decoration: none;
+      font-weight: 950;
+      letter-spacing: -.04em
+    }
+
+    .brandmark {
+      width: 48px;
+      height: 48px;
+      border-radius: 15px;
+      display: grid;
+      place-items: center;
+      color: #fff;
+      background: linear-gradient(145deg, var(--pink), var(--violet), var(--cyan));
+      box-shadow: 0 0 26px rgba(255, 47, 125, .26);
+      font-size: 1.06rem;
+    }
+
+    .brand small {
+      display: block;
+      color: #8ff7ff;
+      margin-top: -2px;
+      font-size: .62rem;
+      letter-spacing: .13em
+    }
+
+    .navlinks {
+      display: flex;
+      align-items: center;
+      gap: 25px
+    }
+
+    .navlinks>a:not(.btn) {
+      text-decoration: none;
+      color: #eee7f8;
+      font-size: .91rem;
+      font-weight: 760
+    }
+
+    .navlinks>a:not(.btn):hover {
+      color: var(--cyan)
+    }
+
+    .menu {
+      display: none;
+      width: 44px;
+      height: 44px;
+      border: 0;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, .07);
+      color: #fff;
+      font-size: 1.3rem
+    }
+
+    .hero {
+      min-height: calc(100vh - 116px);
+      display: grid;
+      align-items: center;
+      padding: 76px 0 72px;
+      overflow: hidden
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      width: 820px;
+      height: 820px;
+      right: -260px;
+      top: -250px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(49, 230, 242, .15), transparent 67%);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.02fr .98fr;
+      gap: 42px;
+      align-items: center
+    }
+
+    .hero-copy {
+      position: relative;
+      z-index: 5
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+      margin: 28px 0 18px
+    }
+
+    .trust {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 19px;
+      color: #d8cfe6;
+      font-size: .88rem
+    }
+
+    .trust span::before {
+      content: "✓";
+      color: var(--cyan);
+      margin-right: 7px;
+      font-weight: 1000
+    }
+
+    .price-mini {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      margin-top: 24px;
+      padding: 12px 16px;
+      border-radius: 16px;
+      border: 1px solid rgba(49, 230, 242, .2);
+      background: rgba(14, 7, 22, .72);
+      backdrop-filter: blur(10px);
+    }
+
+    .price-mini strong {
+      color: var(--cyan);
+      font-size: 1.8rem;
+      line-height: 1
+    }
+
+    .price-mini span {
+      color: #d3c8df;
+      font-size: .82rem;
+      line-height: 1.25
+    }
+
+    .price-mini del {
+      color: #978da5;
+      text-decoration-color: #ff476f;
+      text-decoration-thickness: 3px
+    }
+
+    .hero-art {
+      position: relative;
+      min-height: 690px;
+      perspective: 1200px
+    }
+
+    .mentor-card {
+      position: absolute;
+      inset: 1% 1% 6% 15%;
+      overflow: hidden;
+      border-radius: 34px;
+      border: 1px solid rgba(255, 255, 255, .11);
+      background: #07070c;
+      box-shadow: var(--shadow);
+      transform: rotate(2deg);
+      transition: transform .18s ease-out;
+    }
+
+    .mentor-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top
+    }
+
+    .mentor-card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(7, 4, 12, .46), transparent 52%)
+    }
+
+    .box-float {
+      position: absolute;
+      left: -2%;
+      bottom: 4%;
+      z-index: 5;
+      width: 58%;
+      filter: drop-shadow(0 28px 46px rgba(0, 0, 0, .7));
+      animation: float 5.5s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      50% {
+        transform: translateY(-16px) rotate(-1deg)
+      }
+    }
+
+    .ring {
+      position: absolute;
+      left: -2%;
+      bottom: 0;
+      width: 72%;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      border: 1px solid rgba(49, 230, 242, .16);
+      box-shadow: 0 0 74px rgba(49, 230, 242, .11), inset 0 0 46px rgba(255, 47, 125, .08);
+      transform: rotateX(72deg);
+    }
+
+    .chip {
+      position: absolute;
+      z-index: 7;
+      padding: 11px 14px;
+      border-radius: 14px;
+      border: 1px solid rgba(49, 230, 242, .18);
+      background: rgba(10, 6, 16, .88);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 18px 40px rgba(0, 0, 0, .42);
+      font-size: .8rem;
+      font-weight: 900;
+    }
+
+    .chip b {
+      color: var(--cyan)
+    }
+
+    .c1 {
+      left: 0;
+      top: 10%
+    }
+
+    .c2 {
+      right: 0;
+      top: 28%
+    }
+
+    .c3 {
+      right: 2%;
+      bottom: 12%
+    }
+
+    .ticker {
+      overflow: hidden;
+      border-block: 1px solid rgba(255, 255, 255, .07);
+      background: rgba(255, 255, 255, .02)
+    }
+
+    .track {
+      display: flex;
+      width: max-content;
+      padding: 19px 0;
+      animation: marquee 29s linear infinite;
+      color: #f2eafb;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      font-size: .78rem;
+      font-weight: 900;
+    }
+
+    .track span {
+      margin: 0 28px
+    }
+
+    .track i {
+      color: var(--cyan);
+      font-style: normal
+    }
+
+    @keyframes marquee {
+      to {
+        transform: translateX(-50%)
+      }
+    }
+
+    .heading {
+      max-width: 900px;
+      margin-bottom: 46px
+    }
+
+    .heading.center {
+      text-align: center;
+      margin-inline: auto
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px
+    }
+
+    .card,
+    .problem,
+    .benefit,
+    .who,
+    .include,
+    .faq-card,
+    .metric {
+      padding: 26px;
+      border-radius: 24px;
+      background: linear-gradient(145deg, rgba(255, 255, 255, .05), rgba(255, 255, 255, .017)), var(--panel);
+      border: 1px solid rgba(255, 255, 255, .08);
+      box-shadow: var(--shadow);
+    }
+
+    .problem,
+    .benefit,
+    .who,
+    .metric {
+      transition: .24s ease
+    }
+
+    .problem:hover,
+    .benefit:hover,
+    .who:hover,
+    .metric:hover {
+      transform: translateY(-6px);
+      border-color: rgba(49, 230, 242, .22)
+    }
+
+    .icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 18px;
+      color: #fff;
+      background: linear-gradient(145deg, var(--pink), var(--violet), var(--cyan));
+      font-weight: 1000;
+    }
+
+    .steps {
+      display: grid;
+      gap: 13px;
+      margin-top: 22px
+    }
+
+    .step {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      padding: 15px;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, .035);
+      border: 1px solid rgba(255, 255, 255, .07);
+    }
+
+    .step b {
+      flex: 0 0 32px;
+      width: 32px;
+      height: 32px;
+      border-radius: 10px;
+      display: grid;
+      place-items: center;
+      color: #fff;
+      background: linear-gradient(145deg, var(--pink), var(--violet));
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px
+    }
+
+    .metric b {
+      display: block;
+      font-size: 1.72rem;
+      color: var(--cyan);
+      line-height: 1;
+      margin-bottom: 8px
+    }
+
+    .module-stage {
+      display: grid;
+      grid-template-columns: 360px 1fr;
+      gap: 24px;
+      align-items: stretch;
+      padding: 20px;
+      border-radius: 30px;
+      background: linear-gradient(145deg, rgba(255, 255, 255, .05), rgba(255, 255, 255, .018)), #0f0917;
+      border: 1px solid rgba(255, 255, 255, .08);
+      box-shadow: var(--shadow);
+    }
+
+    .module-nav {
+      display: grid;
+      gap: 12px
+    }
+
+    .tab-btn {
+      width: 100%;
+      text-align: left;
+      cursor: pointer;
+      border: 1px solid rgba(255, 255, 255, .08);
+      border-radius: 22px;
+      background: rgba(255, 255, 255, .03);
+      color: #fff;
+      padding: 18px;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 14px;
+      align-items: center;
+      transition: .25s ease;
+    }
+
+    .tab-btn:hover {
+      border-color: rgba(49, 230, 242, .24);
+      transform: translateX(4px)
+    }
+
+    .tab-btn.active {
+      border-color: rgba(49, 230, 242, .25);
+      background: linear-gradient(135deg, rgba(255, 47, 125, .14), rgba(143, 71, 255, .1), rgba(49, 230, 242, .08));
+      box-shadow: 0 16px 38px rgba(0, 0, 0, .34);
+    }
+
+    .tab-num {
+      width: 54px;
+      height: 54px;
+      border-radius: 16px;
+      display: grid;
+      place-items: center;
+      color: #fff;
+      background: linear-gradient(145deg, var(--pink), var(--violet), var(--cyan));
+      font-weight: 1000;
+    }
+
+    .tab-title small {
+      display: block;
+      color: #88f7ff;
+      font-size: .72rem;
+      font-weight: 950;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      margin-bottom: 4px
+    }
+
+    .tab-title strong {
+      font-size: 1.08rem;
+      line-height: 1.15
+    }
+
+    .tab-title span {
+      display: block;
+      margin-top: 6px;
+      color: #bfb3cb;
+      font-size: .84rem
+    }
+
+    .module-panel {
+      min-height: 610px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 26px;
+      background:
+        radial-gradient(circle at 84% 0, rgba(49, 230, 242, .11), transparent 18rem),
+        radial-gradient(circle at 0 90%, rgba(255, 47, 125, .08), transparent 16rem),
+        var(--panel2);
+      border: 1px solid rgba(255, 255, 255, .08);
+    }
+
+    .tab-pane {
+      display: none;
+      height: 100%;
+      padding: 30px;
+      animation: fade .32s ease
+    }
+
+    .tab-pane.active {
+      display: grid;
+      grid-template-columns: 1.02fr .98fr;
+      gap: 24px;
+      align-items: center
+    }
+
+    @keyframes fade {
+      from {
+        opacity: 0;
+        transform: translateY(8px)
+      }
+
+      to {
+        opacity: 1;
+        transform: none
+      }
+    }
+
+    .tab-pane h3 {
+      font-size: 2rem;
+      line-height: 1;
+      margin-bottom: 10px
+    }
+
+    .bullets {
+      display: grid;
+      gap: 10px;
+      margin: 20px 0 0;
+      padding: 0
+    }
+
+    .bullets li {
+      list-style: none;
+      position: relative;
+      padding: 12px 14px 12px 36px;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, .04);
+      color: #eee6f7;
+    }
+
+    .bullets li::before {
+      content: "✓";
+      position: absolute;
+      left: 14px;
+      color: var(--cyan);
+      font-weight: 1000
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px
+    }
+
+    .tag {
+      padding: 9px 12px;
+      border-radius: 999px;
+      background: rgba(49, 230, 242, .09);
+      color: #8ff7ff;
+      border: 1px solid rgba(49, 230, 242, .18);
+      font-size: .82rem;
+      font-weight: 850
+    }
+
+    .preview {
+      position: relative
+    }
+
+    .preview img {
+      filter: drop-shadow(0 28px 48px rgba(0, 0, 0, .58))
+    }
+
+    .preview-badge {
+      position: absolute;
+      right: 0;
+      bottom: 18px;
+      padding: 14px 16px;
+      border-radius: 16px;
+      border: 1px solid rgba(49, 230, 242, .2);
+      background: rgba(10, 6, 16, .84);
+      backdrop-filter: blur(12px);
+      font-weight: 900;
+    }
+
+    .preview-badge b {
+      display: block;
+      color: var(--cyan);
+      font-size: 1.26rem
+    }
+
+    .includes-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px
+    }
+
+    .includes-grid .include strong {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--cyan)
+    }
+
+    .who-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px
+    }
+
+    .result-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center
+    }
+
+    .devices {
+      position: relative;
+      min-height: 560px;
+      display: grid;
+      place-items: center
+    }
+
+    .devices .laptop {
+      width: 110%;
+      filter: drop-shadow(0 34px 56px rgba(0, 0, 0, .68))
+    }
+
+    .devices .tablet {
+      position: absolute;
+      width: 40%;
+      right: -1%;
+      bottom: 0;
+      filter: drop-shadow(0 24px 42px rgba(0, 0, 0, .64));
+      animation: float 5.7s ease-in-out infinite
+    }
+
+    .checklist {
+      display: grid;
+      gap: 12px;
+      margin: 26px 0
+    }
+
+    .check {
+      display: flex;
+      gap: 13px;
+      padding: 15px;
+      border-radius: 15px;
+      background: rgba(255, 255, 255, .035);
+      border: 1px solid rgba(255, 255, 255, .075);
+    }
+
+    .check i {
+      flex: 0 0 31px;
+      width: 31px;
+      height: 31px;
+      border-radius: 9px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(145deg, var(--pink), var(--violet), var(--cyan));
+      color: #fff;
+      font-style: normal;
+      font-weight: 1000;
+    }
+
+    .mentor-grid {
+      display: grid;
+      grid-template-columns: .95fr 1.05fr;
+      gap: 58px;
+      align-items: center
+    }
+
+    .media {
+      min-height: 650px;
+      position: relative;
+      border-radius: 30px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, .1);
+      background: #07070c;
+      box-shadow: var(--shadow);
+    }
+
+    .media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top
+    }
+
+    .media::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(7, 4, 12, .44), transparent 52%)
+    }
+
+    .media-label {
+      position: absolute;
+      z-index: 3;
+      left: 20px;
+      right: 20px;
+      bottom: 20px;
+      padding: 14px 16px;
+      border-radius: 16px;
+      border: 1px solid rgba(49, 230, 242, .18);
+      background: rgba(10, 6, 16, .82);
+      font-weight: 850;
+    }
+
+    .credentials {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      margin-top: 24px
+    }
+
+    .credential {
+      padding: 16px;
+      border-radius: 15px;
+      background: rgba(49, 230, 242, .05);
+      border: 1px solid rgba(49, 230, 242, .14)
+    }
+
+    .credential b {
+      display: block;
+      color: var(--cyan);
+      font-size: 1.06rem
+    }
+
+    .offer {
+      padding: 108px 0;
+      background:
+        radial-gradient(circle at 10% 50%, rgba(255, 47, 125, .08), transparent 23rem),
+        radial-gradient(circle at 90% 20%, rgba(49, 230, 242, .08), transparent 22rem);
+    }
+
+    .offer-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 42px;
+      align-items: center
+    }
+
+    .ad {
+      border-radius: 28px;
+      overflow: hidden;
+      border: 1px solid rgba(49, 230, 242, .18);
+      box-shadow: var(--shadow)
+    }
+
+    .price-card {
+      padding: 40px;
+      border-radius: 30px;
+      background: linear-gradient(145deg, rgba(255, 255, 255, .06), rgba(255, 255, 255, .018)), #120a1d;
+      border: 1px solid rgba(255, 255, 255, .09);
+      box-shadow: var(--shadow);
+    }
+
+    .old {
+      display: inline-block;
+      color: #d0c4db;
+      text-decoration: line-through;
+      text-decoration-color: #ff4d76;
+      text-decoration-thickness: 3px;
+      font-weight: 900
+    }
+
+    .price {
+      display: flex;
+      align-items: flex-start;
+      margin: 14px 0 18px;
+      color: var(--cyan);
+      font-weight: 1000;
+      line-height: .84
+    }
+
+    .price .cur {
+      font-size: 2rem;
+      margin-top: 10px
+    }
+
+    .price .amt {
+      font-size: clamp(4.6rem, 8vw, 7rem);
+      letter-spacing: -.08em
+    }
+
+    .price .usd {
+      align-self: flex-end;
+      margin: 0 0 10px 10px;
+      color: #fff;
+      font-size: 1rem
+    }
+
+    .faq {
+      max-width: 930px;
+      margin: auto
+    }
+
+    details {
+      margin-bottom: 12px;
+      border: 1px solid rgba(255, 255, 255, .08);
+      border-radius: 18px;
+      background: rgba(255, 255, 255, .03);
+      overflow: hidden
+    }
+
+    summary {
+      padding: 20px 22px;
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      font-weight: 850
+    }
+
+    summary::-webkit-details-marker {
+      display: none
+    }
+
+    summary::after {
+      content: "+";
+      color: var(--cyan);
+      font-size: 1.4rem
+    }
+
+    details[open] summary::after {
+      content: "−"
+    }
+
+    details p {
+      margin: 0;
+      padding: 0 22px 22px;
+      color: #b8adc8
+    }
+
+    .final {
+      padding: 90px 0;
+      text-align: center
+    }
+
+    .final-card {
+      padding: 72px 28px;
+      border-radius: 34px;
+      background:
+        radial-gradient(circle at 20% 0, rgba(255, 47, 125, .14), transparent 40%),
+        radial-gradient(circle at 80% 0, rgba(49, 230, 242, .14), transparent 42%),
+        #100719;
+      border: 1px solid rgba(49, 230, 242, .14);
+      box-shadow: var(--shadow);
+    }
+
+    .final-card h2 {
+      max-width: 930px;
+      margin-inline: auto
+    }
+
+    .final-card p {
+      max-width: 760px;
+      margin: 0 auto 28px
+    }
+
+    footer {
+      padding: 32px 0 105px;
+      border-top: 1px solid rgba(255, 255, 255, .06);
+      color: #857993;
+      font-size: .84rem
+    }
+
+    .footerin {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap
+    }
+
+    .sticky {
+      position: fixed;
+      z-index: 70;
+      right: 20px;
+      bottom: 20px;
+      min-height: 58px;
+      padding: 0 22px;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 1000;
+      background: linear-gradient(135deg, var(--pink), var(--violet), var(--cyan2));
+      box-shadow: 0 18px 52px rgba(0, 0, 0, .55), 0 0 35px rgba(49, 230, 242, .16);
+      transform: translateY(100px);
+      opacity: 0;
+      transition: .35s ease;
+    }
+
+    .sticky.show {
+      transform: none;
+      opacity: 1
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(27px);
+      transition: opacity .75s ease, transform .75s ease
+    }
+
+    .reveal.on {
+      opacity: 1;
+      transform: none
+    }
+
+    @media(max-width:1080px) {
+
+      .hero-grid,
+      .grid-2,
+      .result-grid,
+      .offer-grid,
+      .mentor-grid {
+        grid-template-columns: 1fr
+      }
+
+      .module-stage {
+        grid-template-columns: 1fr
+      }
+
+      .stats {
+        grid-template-columns: repeat(2, 1fr)
+      }
+
+      .includes-grid,
+      .who-grid {
+        grid-template-columns: 1fr 1fr
+      }
+
+      .hero-art {
+        min-height: 620px;
+        max-width: 720px;
+        width: 100%;
+        margin: auto
+      }
+    }
+
+    @media(max-width:760px) {
+      .section {
+        padding: 80px 0
+      }
+
+      .navlinks {
+        display: none;
+        position: absolute;
+        top: 77px;
+        left: 18px;
+        right: 18px;
+        padding: 12px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        border-radius: 18px;
+        background: rgba(7, 4, 12, .98);
+        border: 1px solid rgba(255, 255, 255, .08);
+        box-shadow: var(--shadow);
+      }
+
+      .navlinks.open {
+        display: flex
+      }
+
+      .navlinks>a {
+        padding: 12px
+      }
+
+      .navlinks .btn {
+        margin-top: 8px
+      }
+
+      .menu {
+        display: block
+      }
+
+      .hero {
+        min-height: auto;
+        padding-top: 58px
+      }
+
+      .hero-art {
+        min-height: 510px
+      }
+
+      .stats,
+      .includes-grid,
+      .who-grid,
+      .grid-3 {
+        grid-template-columns: 1fr
+      }
+
+      .tab-pane.active {
+        grid-template-columns: 1fr
+      }
+
+      .tab-pane h3 {
+        font-size: 1.65rem
+      }
+
+      .sticky {
+        left: 10px;
+        right: 10px;
+        bottom: 10px
+      }
+
+      footer {
+        padding-bottom: 100px
+      }
+    }
+
+    @media(max-width:480px) {
+      .container {
+        width: calc(100% - 24px)
+      }
+
+      h1 {
+        font-size: clamp(2.8rem, 15vw, 5rem)
+      }
+
+      h2 {
+        font-size: clamp(2rem, 10vw, 3.4rem)
+      }
+
+      .hero-actions {
+        flex-direction: column
+      }
+
+      .hero-actions .btn {
+        width: 100%
+      }
+
+      .hero-art {
+        min-height: 420px
+      }
+
+      .mentor-card {
+        inset: 3% 3% 3% 10%
+      }
+
+      .box-float {
+        width: 66%;
+        left: -3%
+      }
+
+      .chip {
+        font-size: .66rem;
+        padding: 8px 10px
+      }
+
+      .module-stage {
+        padding: 14px
+      }
+
+      .tab-btn {
+        padding: 15px
+      }
+
+      .tab-num {
+        width: 48px;
+        height: 48px
+      }
+
+      .price-card {
+        padding: 28px 22px
+      }
+
+      .final-card {
+        padding: 52px 18px
+      }
+
+      .credentials {
+        grid-template-columns: 1fr
+      }
+    }
+
+    @media(prefers-reduced-motion:reduce) {
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+        scroll-behavior: auto !important
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="offerbar">PRECIO REGULAR $47 USD · OFERTA ESPECIAL: SOLO $14.99 USD</div>
+
+  <nav class="nav">
+    <div class="container navin">
+      <a class="brand" href="#inicio">
+        <span class="brandmark">TT</span>
+        <span>TikTok <span class="gradient">Imparable</span><small>CURACIÓN + IA</small></span>
+      </a>
+      <button class="menu" id="menu" aria-label="Abrir menú">☰</button>
+      <div class="navlinks" id="navlinks">
+        <a href="#aprendes">Qué aprenderás</a>
+        <a href="#programa">Programa</a>
+        <a href="#incluye">Qué incluye</a>
+        <a href="#mentor">Productor</a>
+        <a class="btn btn-primary btn-sm buy" href="https://pay.hotmart.com/Q106684450I?off=7g3k8rtg&checkoutMode=10"
+          target="_blank" rel="noopener noreferrer">Quiero entrar</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">Entrenamiento online paso a paso</span>
+          <h1>Haz crecer tu cuenta de TikTok sin pasar horas creando contenido <span class="gradient">desde cero.</span>
+          </h1>
+          <p class="lead">Aprende a encontrar contenido con potencial, adaptarlo correctamente y utilizar herramientas
+            de Inteligencia Artificial para acelerar tu trabajo y publicar con una estrategia más organizada.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary buy" href="https://pay.hotmart.com/Q106684450I?off=7g3k8rtg&checkoutMode=10"
+              target="_blank" rel="noopener noreferrer">Acceder hoy por $14.99 USD →</a>
+            <a class="btn btn-secondary" href="#programa">Ver el entrenamiento</a>
+          </div>
+          <div class="trust">
+            <span>Ideal para principiantes</span>
+            <span>Mentorías semanales</span>
+            <span>Actualizaciones futuras</span>
+          </div>
+          <div class="price-mini">
+            <strong>$14.99</strong>
+            <span>USD pago único<br><del>antes $47 USD</del></span>
+          </div>
+        </div>
+
+        <div class="hero-art reveal" id="tiltArea">
+          <div class="ring"></div>
+          <div class="mentor-card" id="tiltCard">
+            <img src="assets/mentor.webp" alt="Víctor Naranjo - TikTok Imparable">
+          </div>
+          <img class="box-float" src="assets/box.webp" alt="TikTok Imparable">
+          <div class="chip c1"><b>Curación estratégica</b><br>sin improvisar</div>
+          <div class="chip c2"><b>SEO para TikTok</b><br>perfil optimizado</div>
+          <div class="chip c3"><b>Videos con IA</b><br>más rapidez y orden</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="ticker">
+      <div class="track">
+        <span><i>✦</i> Curación de contenido</span>
+        <span><i>✦</i> SEO para TikTok</span>
+        <span><i>✦</i> Inteligencia Artificial</span>
+        <span><i>✦</i> ChatGPT</span>
+        <span><i>✦</i> CapCut</span>
+        <span><i>✦</i> Meta AI</span>
+        <span><i>✦</i> Voz con IA</span>
+        <span><i>✦</i> Publicación estratégica</span>
+        <span><i>✦</i> Curación de contenido</span>
+        <span><i>✦</i> SEO para TikTok</span>
+        <span><i>✦</i> Inteligencia Artificial</span>
+        <span><i>✦</i> ChatGPT</span>
+        <span><i>✦</i> CapCut</span>
+        <span><i>✦</i> Meta AI</span>
+        <span><i>✦</i> Voz con IA</span>
+        <span><i>✦</i> Publicación estratégica</span>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <div class="heading reveal">
+          <span class="eyebrow">El problema</span>
+          <h2>Muchas cuentas dejan de publicar porque no tienen un método claro para encontrar ideas, crear contenido y
+            entender cómo funciona <span class="gradient">TikTok.</span></h2>
+          <p class="lead">Este entrenamiento reúne curación de contenido, optimización de perfiles, SEO e Inteligencia
+            Artificial dentro de un sistema práctico que puedes aplicar desde el primer día.</p>
+        </div>
+        <div class="grid-3">
+          <article class="problem reveal">
+            <div class="icon">01</div>
+            <h3>Publican sin estrategia</h3>
+            <p>Aprenderás a organizar tu contenido con objetivos claros, en lugar de improvisar en cada publicación.</p>
+          </article>
+          <article class="problem reveal">
+            <div class="icon">02</div>
+            <h3>Pierden horas creando desde cero</h3>
+            <p>Descubrirás cómo encontrar contenido con potencial y adaptarlo correctamente.</p>
+          </article>
+          <article class="problem reveal">
+            <div class="icon">03</div>
+            <h3>No aprovechan la Inteligencia Artificial</h3>
+            <p>Usarás herramientas de IA para acelerar ideas, creación, edición y publicación.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-sm">
+      <div class="container">
+        <div class="heading center reveal">
+          <span class="eyebrow">Resultados que podrás lograr</span>
+          <h2>Construye una cuenta más profesional y un sistema que te ayude a publicar con <span
+              class="gradient">constancia, orden y estrategia.</span></h2>
+        </div>
+        <div class="stats">
+          <article class="metric reveal"><b>Perfil optimizado</b><span class="muted">Nombre, identidad y configuración
+              profesional.</span></article>
+          <article class="metric reveal"><b>Contenido más rápido</b><span class="muted">Ahorra horas usando curación e
+              IA.</span></article>
+          <article class="metric reveal"><b>Más alcance</b><span class="muted">Publica con mejor estructura y
+              estrategia.</span></article>
+          <article class="metric reveal"><b>Sistema constante</b><span class="muted">Mantén activa tu cuenta sin
+              improvisar.</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-sm" id="aprendes">
+      <div class="container grid-2">
+        <article class="card reveal">
+          <h3>¿Qué aprenderás?</h3>
+          <div class="steps">
+            <div class="step"><b>✓</b>
+              <div><strong>Crear y optimizar una cuenta profesional</strong><span class="muted">Nombre, perfil,
+                  identidad y posicionamiento.</span></div>
+            </div>
+            <div class="step"><b>✓</b>
+              <div><strong>Encontrar contenido con potencial</strong><span class="muted">Búsqueda, selección y
+                  adaptación estratégica.</span></div>
+            </div>
+            <div class="step"><b>✓</b>
+              <div><strong>Curar contenido respetando políticas</strong><span class="muted">Procesos correctos para
+                  adaptar y publicar.</span></div>
+            </div>
+            <div class="step"><b>✓</b>
+              <div><strong>Crear videos con Inteligencia Artificial</strong><span class="muted">ChatGPT, CapCut, Meta AI
+                  y voz con IA.</span></div>
+            </div>
+          </div>
+        </article>
+        <article class="card reveal">
+          <h3>¿Para quién es este curso?</h3>
+          <div class="steps">
+            <div class="step"><b>1</b>
+              <div><strong>Personas que quieren crecer en TikTok</strong><span class="muted">Incluso si están empezando
+                  desde cero.</span></div>
+            </div>
+            <div class="step"><b>2</b>
+              <div><strong>Creadores y emprendedores</strong><span class="muted">Que necesitan contenido más rápido y
+                  estratégico.</span></div>
+            </div>
+            <div class="step"><b>3</b>
+              <div><strong>Afiliados y negocios</strong><span class="muted">Que buscan visibilidad y una comunidad más
+                  activa.</span></div>
+            </div>
+            <div class="step"><b>4</b>
+              <div><strong>Usuarios interesados en IA</strong><span class="muted">Que quieren automatizar parte de su
+                  flujo creativo.</span></div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="programa">
+      <div class="container">
+        <div class="heading center reveal">
+          <span class="eyebrow">Contenido del curso</span>
+          <h2>Avanza paso a paso desde la creación de tu cuenta hasta la curación avanzada y la <span
+              class="gradient">automatización con IA.</span></h2>
+          <p class="lead" style="margin-inline:auto">Cada módulo está diseñado para que puedas aplicar lo aprendido de
+            forma inmediata.</p>
+        </div>
+
+        <div class="module-stage reveal">
+          <div class="module-nav">
+            <button class="tab-btn active" data-tab="tab1">
+              <span class="tab-num">01</span>
+              <span class="tab-title">
+                <small>Módulo 1</small>
+                <strong>Los Cimientos del Éxito</strong>
+                <span>Bienvenida, ruta de aprendizaje y acceso a la comunidad.</span>
+              </span>
+            </button>
+            <button class="tab-btn" data-tab="tab2">
+              <span class="tab-num">02</span>
+              <span class="tab-title">
+                <small>Módulo 2</small>
+                <strong>Branding e Identidad Digital</strong>
+                <span>Nombre, SEO, creación de cuenta y perfil profesional.</span>
+              </span>
+            </button>
+            <button class="tab-btn" data-tab="tab3">
+              <span class="tab-num">03</span>
+              <span class="tab-title">
+                <small>Módulo 3</small>
+                <strong>Curación Estratégica de Contenido</strong>
+                <span>Búsqueda, adaptación, publicación y voz con IA.</span>
+              </span>
+            </button>
+            <button class="tab-btn" data-tab="tab4">
+              <span class="tab-num">04</span>
+              <span class="tab-title">
+                <small>Módulo 4</small>
+                <strong>Automatización con Inteligencia Artificial</strong>
+                <span>ChatGPT, CapCut, Meta AI y creación avanzada.</span>
+              </span>
+            </button>
+          </div>
+
+          <div class="module-panel">
+            <div class="tab-pane active" id="tab1">
+              <div>
+                <span class="eyebrow">Primeros pasos</span>
+                <h3>Comienza con una ruta clara para aprovechar el entrenamiento desde el primer día.</h3>
+                <p>Organiza tu avance, conoce la metodología y accede al espacio privado de acompañamiento.</p>
+                <ul class="bullets">
+                  <li>Bienvenida al entrenamiento</li>
+                  <li>Cómo aprovechar al máximo cada lección</li>
+                  <li>Acceso al grupo privado</li>
+                  <li>Plan de implementación paso a paso</li>
+                </ul>
+                <div class="tags"><span class="tag">Inicio</span><span class="tag">Ruta</span><span
+                    class="tag">Comunidad</span></div>
+              </div>
+              <div class="preview">
+                <img src="assets/box.webp" alt="Caja de TikTok Imparable">
+                <div class="preview-badge"><b>Empieza</b> con dirección</div>
+              </div>
+            </div>
+
+            <div class="tab-pane" id="tab2">
+              <div>
+                <span class="eyebrow">Identidad y SEO</span>
+                <h3>Construye una cuenta profesional y optimiza tu perfil para mejorar su posicionamiento.</h3>
+                <p>Trabajarás nombre, perfil e identidad con principios de SEO adaptados a TikTok.</p>
+                <ul class="bullets">
+                  <li>Dominando la Inteligencia Artificial</li>
+                  <li>Cómo escoger un nombre optimizado con SEO</li>
+                  <li>Creación correcta de la cuenta</li>
+                  <li>Configuración del perfil profesional</li>
+                </ul>
+                <div class="tags"><span class="tag">Branding</span><span class="tag">SEO</span><span
+                    class="tag">Perfil</span></div>
+              </div>
+              <div class="preview">
+                <img src="assets/tablet.webp" alt="TikTok Imparable en tablet">
+                <div class="preview-badge"><b>Optimiza</b> tu presencia</div>
+              </div>
+            </div>
+
+            <div class="tab-pane" id="tab3">
+              <div>
+                <span class="eyebrow">Curación estratégica</span>
+                <h3>Aprende a encontrar, adaptar y publicar contenido con mayor criterio.</h3>
+                <p>Este módulo te ayuda a evitar errores y a construir un flujo de curación más profesional.</p>
+                <ul class="bullets">
+                  <li>Errores que debes evitar</li>
+                  <li>Cómo buscar contenido con potencial</li>
+                  <li>Curación de contenido de terceros</li>
+                  <li>Adaptación de videos y publicación correcta</li>
+                  <li>Curación de contenido en inglés</li>
+                  <li>Cómo agregar voz humana mediante IA</li>
+                </ul>
+                <div class="tags"><span class="tag">Búsqueda</span><span class="tag">Adaptación</span><span
+                    class="tag">Voz IA</span></div>
+              </div>
+              <div class="preview">
+                <img src="assets/laptop.webp" alt="TikTok Imparable en laptop">
+                <div class="preview-badge"><b>Curación</b> con estrategia</div>
+              </div>
+            </div>
+
+            <div class="tab-pane" id="tab4">
+              <div>
+                <span class="eyebrow">Automatización</span>
+                <h3>Usa Inteligencia Artificial para acelerar gran parte de la creación y edición.</h3>
+                <p>Combina herramientas modernas para producir contenido con más rapidez y consistencia.</p>
+                <ul class="bullets">
+                  <li>Creación de videos con ChatGPT</li>
+                  <li>Uso de CapCut</li>
+                  <li>Uso de Meta AI</li>
+                  <li>Creación avanzada de videos</li>
+                  <li>Edición profesional</li>
+                  <li>Publicación final</li>
+                </ul>
+                <div class="tags"><span class="tag">ChatGPT</span><span class="tag">CapCut</span><span class="tag">Meta
+                    AI</span></div>
+              </div>
+              <div class="preview">
+                <img src="assets/tablet.webp" alt="TikTok Imparable en tablet">
+                <div class="preview-badge"><b>Más velocidad</b> con IA</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-sm" id="incluye">
+      <div class="container">
+        <div class="heading center reveal">
+          <span class="eyebrow">Todo lo que incluye</span>
+          <h2>Formación, acompañamiento y actualizaciones para ayudarte a implementar una estrategia más <span
+              class="gradient">completa.</span></h2>
+        </div>
+        <div class="includes-grid">
+          <article class="include reveal"><strong>Acceso al entrenamiento completo</strong>
+            <p>Todos los módulos y clases disponibles.</p>
+          </article>
+          <article class="include reveal"><strong>Grupo privado de Telegram</strong>
+            <p>Acompañamiento, dudas y avances junto a otros estudiantes.</p>
+          </article>
+          <article class="include reveal"><strong>Mentorías semanales por Zoom</strong>
+            <p>Sesiones para revisar estrategias y resolver preguntas.</p>
+          </article>
+          <article class="include reveal"><strong>Actualizaciones futuras</strong>
+            <p>Acceso a nuevas clases y mejoras sin pagar nuevamente.</p>
+          </article>
+          <article class="include reveal"><strong>Acceso inmediato</strong>
+            <p>Comienza a aprender desde el primer momento.</p>
+          </article>
+          <article class="include reveal"><strong>Disponible 24/7</strong>
+            <p>Avanza a tu propio ritmo.</p>
+          </article>
+          <article class="include reveal"><strong>Compatible con cualquier dispositivo</strong>
+            <p>Computador, tablet o celular.</p>
+          </article>
+          <article class="include reveal"><strong>Soporte permanente</strong>
+            <p>Acompañamiento durante tu proceso de aprendizaje.</p>
+          </article>
+          <article class="include reveal"><strong>Método paso a paso</strong>
+            <p>Contenido explicado de forma sencilla y práctica.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-sm">
+      <div class="container result-grid">
+        <div class="devices reveal">
+          <img class="laptop" src="assets/laptop.webp" alt="TikTok Imparable en laptop">
+          <img class="tablet" src="assets/tablet.webp" alt="TikTok Imparable en tablet">
+        </div>
+        <div class="reveal">
+          <span class="eyebrow">Transformación</span>
+          <h2>Al finalizar tendrás una cuenta mejor optimizada y un proceso más claro para crear contenido con <span
+              class="gradient">menos improvisación.</span></h2>
+          <div class="checklist">
+            <div class="check"><i>✓</i>
+              <div><strong>Cuenta profesional optimizada</strong><br><span class="muted">Nombre, perfil e identidad
+                  mejor estructurados.</span></div>
+            </div>
+            <div class="check"><i>✓</i>
+              <div><strong>Contenido creado más rápido</strong><br><span class="muted">Usando curación e Inteligencia
+                  Artificial.</span></div>
+            </div>
+            <div class="check"><i>✓</i>
+              <div><strong>Publicación con estrategia</strong><br><span class="muted">Hashtags, formato y adaptación con
+                  mayor criterio.</span></div>
+            </div>
+            <div class="check"><i>✓</i>
+              <div><strong>Sistema para mantener tu cuenta activa</strong><br><span class="muted">Un flujo de trabajo
+                  constante y organizado.</span></div>
+            </div>
+          </div>
+          <a class="btn btn-primary buy" href="https://pay.hotmart.com/Q106684450I?off=7g3k8rtg&checkoutMode=10"
+            target="_blank" rel="noopener noreferrer">Quiero TikTok Imparable</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-sm">
+      <div class="container">
+        <div class="heading center reveal">
+          <span class="eyebrow">¿Para quién es?</span>
+          <h2>Ideal para personas que desean crecer en TikTok sin depender únicamente de crear todo el contenido <span
+              class="gradient">desde cero.</span></h2>
+        </div>
+        <div class="who-grid">
+          <article class="who reveal">
+            <h3>Creadores de contenido</h3>
+            <p>Que buscan más ideas, velocidad y estrategia.</p>
+          </article>
+          <article class="who reveal">
+            <h3>Emprendedores digitales</h3>
+            <p>Que quieren posicionar una cuenta de forma profesional.</p>
+          </article>
+          <article class="who reveal">
+            <h3>Afiliados</h3>
+            <p>Que necesitan alcance y comunidad.</p>
+          </article>
+          <article class="who reveal">
+            <h3>Negocios</h3>
+            <p>Que buscan mayor visibilidad en TikTok.</p>
+          </article>
+          <article class="who reveal">
+            <h3>Principiantes</h3>
+            <p>Que necesitan una metodología clara.</p>
+          </article>
+          <article class="who reveal">
+            <h3>Usuarios de Inteligencia Artificial</h3>
+            <p>Que quieren automatizar parte del trabajo creativo.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="mentor">
+      <div class="container mentor-grid">
+        <div class="media reveal">
+          <img src="assets/mentor.webp" alt="Víctor Naranjo">
+          <div class="media-label"><b style="color:var(--cyan)">Víctor Naranjo</b><br>Especialista en Marketing Digital
+            y creación de productos digitales</div>
+        </div>
+        <div class="reveal">
+          <span class="eyebrow">Sobre el productor</span>
+          <h2>Más de <span class="gradient">6 años de experiencia</span> ayudando a emprendedores y creadores a
+            desarrollar habilidades digitales.</h2>
+          <p class="lead">Víctor Naranjo es especialista en Marketing Digital y creación de productos digitales. Su
+            metodología está basada en la aplicación inmediata, permitiendo que cualquier persona pueda comenzar desde
+            cero y avanzar paso a paso hasta dominar herramientas como TikTok e Inteligencia Artificial.</p>
+          <div class="credentials">
+            <div class="credential"><b>6+ años</b><span class="muted">de experiencia en marketing digital</span></div>
+            <div class="credential"><b>Metodología práctica</b><span class="muted">orientada a aplicación
+                inmediata</span></div>
+            <div class="credential"><b>TikTok + IA</b><span class="muted">estrategias actuales y herramientas
+                modernas</span></div>
+            <div class="credential"><b>Acompañamiento</b><span class="muted">mentorías, soporte y actualizaciones</span>
+            </div>
+          </div>
+          <a class="btn btn-primary buy" href="https://pay.hotmart.com/Q106684450I?off=7g3k8rtg&checkoutMode=10"
+            target="_blank" rel="noopener noreferrer">Entrar al entrenamiento</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="offer" id="oferta">
+      <div class="container offer-grid">
+        <div class="ad reveal">
+          <img src="assets/promo.webp" alt="Oferta de TikTok Imparable">
+        </div>
+        <div class="price-card reveal">
+          <span class="eyebrow">Oferta especial</span>
+          <h2 style="margin-top:18px">Haz que tu cuenta destaque con una estrategia más inteligente para encontrar,
+            adaptar y publicar contenido.</h2>
+          <p class="lead">Tu compra incluye el entrenamiento completo, grupo privado, mentorías semanales, soporte y
+            futuras actualizaciones.</p>
+          <span class="old">Precio regular: $47 USD</span>
+          <div class="price">
+            <span class="cur">$</span>
+            <span class="amt">14.99</span>
+            <span class="usd">USD<br>pago único</span>
+          </div>
+          <div class="checklist">
+            <div class="check"><i>✓</i>
+              <div><strong>Entrenamiento paso a paso</strong><br><span class="muted">Desde fundamentos hasta
+                  automatización con IA.</span></div>
+            </div>
+            <div class="check"><i>✓</i>
+              <div><strong>Grupo privado en Telegram</strong><br><span class="muted">Acompañamiento y resolución de
+                  dudas.</span></div>
+            </div>
+            <div class="check"><i>✓</i>
+              <div><strong>Mentorías semanales en vivo</strong><br><span class="muted">Sesiones para revisar estrategias
+                  y avances.</span></div>
+            </div>
+            <div class="check"><i>✓</i>
+              <div><strong>Actualizaciones futuras</strong><br><span class="muted">Nuevas clases y mejoras
+                  incluidas.</span></div>
+            </div>
+          </div>
+          <a class="btn btn-primary buy" href="https://pay.hotmart.com/Q106684450I?off=7g3k8rtg&checkoutMode=10"
+            target="_blank" rel="noopener noreferrer">Aprovechar la oferta →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-sm">
+      <div class="container">
+        <div class="heading center reveal">
+          <span class="eyebrow">Preguntas frecuentes</span>
+          <h2>Lo que normalmente quieren saber antes de <span class="gradient">comenzar.</span></h2>
+        </div>
+        <div class="faq reveal">
+          <details>
+            <summary>¿Necesito experiencia previa en TikTok?</summary>
+            <p>No. El entrenamiento está diseñado para principiantes y explica cada etapa paso a paso.</p>
+          </details>
+          <details>
+            <summary>¿Qué aprenderé exactamente?</summary>
+            <p>Aprenderás a crear y optimizar una cuenta profesional, encontrar contenido con potencial, curarlo
+              correctamente, usar SEO, adaptar videos y crear contenido con Inteligencia Artificial.</p>
+          </details>
+          <details>
+            <summary>¿Incluye mentorías?</summary>
+            <p>Sí. Tendrás acceso a mentorías semanales en vivo por Zoom para resolver dudas y revisar estrategias.</p>
+          </details>
+          <details>
+            <summary>¿Hay comunidad privada?</summary>
+            <p>Sí. Incluye un grupo privado de Telegram para acompañamiento, soporte y seguimiento.</p>
+          </details>
+          <details>
+            <summary>¿Recibiré futuras actualizaciones?</summary>
+            <p>Sí. Las nuevas clases y mejoras del entrenamiento estarán incluidas sin pago adicional.</p>
+          </details>
+          <details>
+            <summary>¿Cuál es la inversión actual?</summary>
+            <p>El precio regular es de $47 USD. Actualmente puedes acceder con la oferta especial por solo $14.99 USD.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="final">
+      <div class="container">
+        <div class="final-card reveal">
+          <span class="eyebrow">Empieza hoy</span>
+          <h2>Deja de pasar horas creando contenido desde cero y construye un sistema más rápido para hacer crecer tu
+            cuenta con <span class="gradient">curación e Inteligencia Artificial.</span></h2>
+          <p class="lead">Accede a TikTok Imparable y aprende a optimizar tu perfil, encontrar contenido con potencial,
+            adaptarlo correctamente y publicar con una estrategia organizada.</p>
+          <a class="btn btn-primary buy" href="https://pay.hotmart.com/Q106684450I?off=7g3k8rtg&checkoutMode=10"
+            target="_blank" rel="noopener noreferrer">Entrar ahora por $14.99 USD</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footerin">
+      <div>© 2026 TikTok Imparable.</div>
+      <div>Los resultados dependen de la calidad del contenido, la constancia, la implementación, el nicho, las
+        políticas de la plataforma y otros factores particulares de cada cuenta.</div>
+    </div>
+  </footer>
+
+  <a class="sticky buy" id="sticky" href="https://pay.hotmart.com/Q106684450I?off=7g3k8rtg&checkoutMode=10"
+    target="_blank" rel="noopener noreferrer">Entrar ahora · $14.99 USD →</a>
+
+  <script>
+    const PAYMENT_LINK = "https://pay.hotmart.com/Q106684450I?off=7g3k8rtg&checkoutMode=10";
+    document.querySelectorAll(".buy").forEach(link => {
+      link.href = PAYMENT_LINK;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+    });
+
+    const menu = document.getElementById("menu");
+    const nav = document.getElementById("navlinks");
+    menu?.addEventListener("click", () => nav.classList.toggle("open"));
+    nav?.querySelectorAll("a").forEach(link => link.addEventListener("click", () => nav.classList.remove("open")));
+
+    const observer = new IntersectionObserver(entries => entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("on");
+        observer.unobserve(entry.target);
+      }
+    }), { threshold: .12 });
+    document.querySelectorAll(".reveal").forEach(element => observer.observe(element));
+
+    const sticky = document.getElementById("sticky");
+    const updateSticky = () => sticky.classList.toggle("show", window.scrollY > 700);
+    addEventListener("scroll", updateSticky, { passive: true });
+    updateSticky();
+
+    const tiltArea = document.getElementById("tiltArea");
+    const tiltCard = document.getElementById("tiltCard");
+    if (tiltArea && tiltCard && matchMedia("(pointer:fine)").matches) {
+      tiltArea.addEventListener("mousemove", event => {
+        const rect = tiltArea.getBoundingClientRect();
+        const x = (event.clientX - rect.left) / rect.width - .5;
+        const y = (event.clientY - rect.top) / rect.height - .5;
+        tiltCard.style.transform = `rotateY(${x * 7}deg) rotateX(${-y * 6}deg) rotate(2deg)`;
+      });
+      tiltArea.addEventListener("mouseleave", () => tiltCard.style.transform = "rotate(2deg)");
+    }
+
+    const tabButtons = [...document.querySelectorAll(".tab-btn")];
+    const tabPanes = [...document.querySelectorAll(".tab-pane")];
+    tabButtons.forEach(button => button.addEventListener("click", () => {
+      const target = button.dataset.tab;
+      tabButtons.forEach(item => item.classList.remove("active"));
+      tabPanes.forEach(pane => pane.classList.remove("active"));
+      button.classList.add("active");
+      document.getElementById(target)?.classList.add("active");
+    }));
+  </script>
+</body>
+
+</html>
